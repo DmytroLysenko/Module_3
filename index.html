@@ -6,113 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__nav_list">
-          <li class="header__nav_item"><a href="#">lifestyle</a></li>
-          <li class="header__nav_item"><a href="#">photodiary</a></li>
-          <li class="header__nav_item"><a href="#">music</a></li>
-          <li class="header__nav_item"><a href="#">travel</a></li>
+    <header class="page_header container">
+      <nav class="page_header__nav">
+        <ul class="page_header__nav_list">
+          <li class="page_header__nav_item"><a href="#">lifestyle</a></li>
+          <li class="page_header__nav_item"><a href="#">photodiary</a></li>
+          <li class="page_header__nav_item"><a href="#">music</a></li>
+          <li class="page_header__nav_item"><a href="#">travel</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="section">
-        <article class="section__article">
+    <main class="page_main container">
+      <section class="page_main_section">
+        <article class="section__article_item">
           <img
+            class="section__article_image"
             src="img/fan_zone_1x.jpg"
             alt="fan zone"
             width="420"
             height="280"
           />
           <p class="section__article_name">lifestyle</p>
-          <h2 class="section__article_heading">
+          <h2 class="section__article_title">
             More than just a music festival
           </h2>
-          <p>
+          <p class="section__article_about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi
             accusantium assumenda! Dicta magni laborum dignissimos odio iusto
             aspernatur est, culpa ut ipsa voluptates atque non rerum vitae,
             corrupti dolore!
           </p>
         </article>
-        <article class="section__article">
+        <article class="section__article_item">
           <img
+            class="section__article_image"
             src="img/hot_coffee_1x.jpg"
             alt="hot coffee"
             width="420"
             height="280"
           />
           <p class="section__article_name">lifestyle</p>
-          <h2 class="section__article_heading">
+          <h2 class="section__article_title">
             Life tastes better with coffee
           </h2>
-          <p>
+          <p class="section__article_about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam
             dolorum veritatis sed dolorem perferendis ratione deleniti,
             similique eum asperiores, repellat ab ex facilis repudiandae
             consequuntur sint aperiam reprehenderit nemo.
           </p>
         </article>
-        <article class="section__article">
+        <article class="section__article_item">
           <img
+            class="section__article_image"
             src="img/victory_1x.jpg"
             alt="victory"
             width="420"
             height="280"
           />
           <p class="section__article_name">photodiary</p>
-          <h2 class="section__article_heading">American dream</h2>
-          <p>
+          <h2 class="section__article_title">American dream</h2>
+          <p class="section__article_about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             necessitatibus autem eius consequuntur, possimus voluptatibus
             aperiam illum doloremque, voluptate sit repellendus saepe tempora
             laborum quas fugiat eligendi iusto, sint ratione?
           </p>
         </article>
-        <article class="section__article">
+        <article class="section__article_item">
           <img
+            class="section__article_image"
             src="img/traveller_1x.jpg"
             alt="Traveller"
             width="420"
             height="280"
           />
           <p class="section__article_name">photodiary</p>
-          <h2 class="section__article_heading">A day exploring the Alps</h2>
-          <p>
+          <h2 class="section__article_title">A day exploring the Alps</h2>
+          <p class="section__article_about">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
             libero eius iusto, fugit, omnis nobis repudiandae ad voluptatem
             deleniti molestias fuga eum, tempore optio nostrum amet ipsam
             suscipit exercitationem mollitia?
           </p>
         </article>
-        <article class="section__article">
-          <img src="img/girl_1x.jpg" alt="girl" width="420" height="280" />
+        <article class="section__article_item">
+          <img
+            class="section__article_image"
+            src="img/girl_1x.jpg"
+            alt="girl"
+            width="420"
+            height="280"
+          />
           <p class="section__article_name">lifestyle</p>
-          <h2 class="section__article_heading">Top 10 song for running</h2>
-          <p>
+          <h2 class="section__article_title">Top 10 song for running</h2>
+          <p class="section__article_about">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
             molestiae natus odio minima nesciunt, minus aperiam harum, commodi
             eius numquam eum blanditiis. Quibusdam vel at minima ut ex deserunt
             quos.
           </p>
         </article>
-        <article class="section__article">
-          <img src="img/road_1x.jpg" alt="road" width="420" height="280" />
+        <article class="section__article_item">
+          <img
+            class="section__article_image"
+            src="img/road_1x.jpg"
+            alt="road"
+            width="420"
+            height="280"
+          />
           <p class="section__article_name">lifestyle</p>
-          <h2 class="section__article_heading">Cold winter days</h2>
-          <p>
+          <h2 class="section__article_title">Cold winter days</h2>
+          <p class="section__article_about">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem, aliquam! Quibusdam, fugiat odio dolorem a ut minus
             repudiandae delectus impedit iusto numquam assumenda eveniet?
             Laborum debitis consequuntur reprehenderit voluptatum? Ratione.
           </p>
         </article>
+        <button class="button_load_more">Load more</button>
       </section>
-      <button class="section__button">Load more</button>
     </main>
   </body>
 </html>

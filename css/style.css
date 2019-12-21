@@ -1,88 +1,122 @@
-/* * {
-  outline: 1px solid red;
-} */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Playfair Display", serif;
   color: rgb(98, 98, 98);
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
+}
+
+.container {
   width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.header__nav_list {
+/*      HEADER       */
+.page_header__nav {
+  margin: 70px auto;
+}
+.page_header__nav_list {
   list-style: none;
-
-  padding: 70px 0 100px 165px;
-  margin: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
-.header__nav_item {
-  text-transform: uppercase;
-  line-height: 24px;
-
+.page_header__nav_item {
+  font-size: 14px;
   display: inline-block;
+  vertical-align: middle;
 }
 
-.header__nav a {
-  text-decoration: none;
-  color: rgb(98, 98, 98);
+.page_header__nav_item a {
   display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #626262;
 }
 
-.header__nav_item a:hover {
+.page_header__nav_item a:hover,
+.page_header__nav_item a:focus {
   color: #03a9f4;
 }
 
-.header__nav_list li:nth-child(1) {
+.page_header__nav_item:nth-child(1) {
   margin-right: 120px;
 }
-.header__nav_list li:nth-child(2) {
-  margin-right: 105px;
-}
-.header__nav_list li:nth-child(3) {
-  margin-right: 95px;
+
+.page_header__nav_item:nth-child(2) {
+  margin-right: 104px;
 }
 
-.section__article {
+.page_header__nav_item:nth-child(3) {
+  margin-right: 96px;
+}
+
+/*      MAIN        */
+.page_main_section {
+  font-size: 0;
+}
+
+.section__article_item {
   display: inline-block;
   width: 420px;
+  font-size: 14px;
+  margin-bottom: 130px;
   vertical-align: top;
-  margin-bottom: 135px;
+}
+
+.section__article_item:nth-child(n + 5) {
+  margin-bottom: 54px;
+}
+
+.section__article_item:nth-child(2n) {
+  margin-left: 60px;
+}
+
+.section__article_item img {
+  margin-bottom: 32px;
 }
 
 .section__article_name {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+  line-height: 16px;
   color: #b4ad9e;
-  line-height: 17px;
   text-transform: uppercase;
+  margin: 0 0 32px 0;
 }
 
-.section__article_heading {
+.section__article_title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
-}
-.section__article img {
-  margin-bottom: 30px;
-}
-.section__article .section__article_name {
-  margin-bottom: 28px;
-}
-.section__article .section__article_heading {
-  margin-bottom: 39px;
+  margin: 0 0 44px 0;
 }
 
-.section__article:nth-child(odd) {
-  margin-right: 56px;
+.section__article_about {
+  margin: 0;
 }
-.section__button {
-  font-size: 20px;
-  color: #626262;
+
+/*      BUTTON       */
+.button_load_more {
   display: block;
-  widows: 165px;
-  height: 60px;
-  margin: auto;
+  margin: 0 auto;
+  border: 1px solid rgb(98, 98, 98);
+  padding: 24px 34px;
+  margin-bottom: 70px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  cursor: pointer;
+  background-color: inherit;
 }
